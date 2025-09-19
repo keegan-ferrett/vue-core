@@ -1,0 +1,27 @@
+{
+  "name": "@brewster/vue-core",
+  "version": "1.0.8",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "type": "module",
+  "author": "Keegan Ferrett <keegan.ferrett@gmail.com>",
+  "scripts": {
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "axios": "^1.10.0",
+    "jwt-decode": "^4.0.0",
+    "vue": "^3.5.17",
+    "vue-router": "^4.5.1"
+  },
+  "devDependencies": {
+    "@tsconfig/node18": "^18.2.4",
+    "@types/node": "^24.0.15",
+    "@vue/tsconfig": "^0.7.0",
+    "swagger-typescript-api": "^13.2.7",
+    "typescript": "^5.8.3"
+  }
+}
