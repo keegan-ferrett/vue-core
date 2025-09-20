@@ -5,10 +5,12 @@ when:
 steps:
   - name: prep
     image: debian
+    environment:
+      NPM_AUTH: 
+        from_secret: NPM_AUTH
     commands:
       - echo "This is the prep step"
       - echo "//npm.keegan.boston/:_authToken=\"$NPM_AUTH\"" >> .npmrc
-      - cat .npmrc
 
   - name: build
     image: codeberg.org/woodpecker-plugins/node-pm
