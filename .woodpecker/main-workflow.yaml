@@ -7,7 +7,7 @@ steps:
     image: debian
     commands:
       - echo "This is the prep step"
-      - echo "//npm.keegan.boston/:_authToken=\"$NPM_AUTH\"" > ~/.npmrc
+      - echo "//npm.keegan.boston/:_authToken=\"$NPM_AUTH\"" >> .npmrc
 
   - name: build
     image: codeberg.org/woodpecker-plugins/node-pm
