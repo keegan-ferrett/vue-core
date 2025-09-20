@@ -16,6 +16,6 @@ steps:
       frozen_lockfile: true
       ignore_node_modules: true 
       run:
-        - prepare
         - build
+        - publish
 
