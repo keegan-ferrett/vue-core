@@ -20,5 +20,5 @@ steps:
       ignore_node_modules: true 
       run:
         - build
-        - publish
+        - release
 
