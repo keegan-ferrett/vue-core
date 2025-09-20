@@ -92,7 +92,7 @@ export class OAuthClient {
   ) {
     this.tokens.readTokens()
 
-    if (this.tokens.accesToken !== undefined) {
+    if (this.tokens.accessToken !== undefined) {
       this.isAuthenticated.value = true
     }
   }
@@ -283,7 +283,7 @@ export class OAuthClient {
   }
 
   get accessToken(): string | undefined {
-    return this.tokens.accesToken
+    return this.tokens.accessToken
   }
 
   get accessTokenValid(): boolean {

@@ -1,6 +1,6 @@
 {
-  "name": "@brewster/vue-core",
-  "version": "1.0.8",
+  "name": "@homelab/vue-core",
+  "version": "1.0.0",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "type": "module",
@@ -12,9 +12,9 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "axios": "^1.10.0",
+    "axios": "^1.12.0",
     "jwt-decode": "^4.0.0",
-    "vue": "^3.5.17",
+    "vue": "^3.5.21",
     "vue-router": "^4.5.1"
   },
   "devDependencies": {

@@ -1,0 +1,21 @@
+when:
+  - event: push
+    branch: main
+
+steps:
+  - name: prep
+    image: debian
+    commands:
+      - echo "This is the prep step"
+      - echo "//npm.keegan.boston/:_authToken=\"$NPM_AUTH\"" > ~/.npmrc
+
+  - name: build
+    image: codeberg.org/woodpecker-plugins/node-pm
+    settings:
+      with: npm
+      frozen_lockfile: true
+      ignore_node_modules: true 
+      run:
+        - prepare
+        - build
+
